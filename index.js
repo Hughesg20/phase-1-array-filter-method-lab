@@ -34,15 +34,18 @@
 
 
 
-function findMatching (drivers, string) {
-	return drivers.filter((num) => num.toLowerCase() === string.toLowerCase())
+function findMatching (drivers, nameToMatchTo) {
+	return drivers.filter((num) => num.toLowerCase() === nameToMatchTo.toLowerCase())
 };
 
 function fuzzyMatch(drivers, string) {
 	return drivers.filter((num) => num[0] === string[0])
 };
 
-function matchName(namesArray, string) {
+function matchName(drivers, string) {
 	return drivers.filter((num) => num['name'] === string)
 };
 
+function findMatching(driversArray,nameToMatchTo) {
+    //returning a function that cycles through the items in the array while checking if they are equal to "nameToMatchTo" and if they do it returns that item
+}
